@@ -19,7 +19,6 @@ exports.config = {
     showColors: true,
     defaultTimeoutInterval: 30000,
     print: function () {
-      console.log("JASMINE PRINT FUNCTION...")
     },
     // If true, print timestamps for failures
     showTiming: true,

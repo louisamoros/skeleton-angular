@@ -1,0 +1,42 @@
+{
+  "buildCommand": "npm build",
+  "src": {
+    "commitMessage": "[release-it] prepare release skeleton-angular-%s",
+    "tagName": "skeleton-angular-%s",
+    "tagAnnotation": "skeleton-angular-%s",
+    "pushRepo": null,
+    "beforeStartCommand": "npm test",
+    "beforeStageCommand": false,
+    "afterReleaseCommand": "echo 'ALL OK'"
+  },
+  "dist": {
+    "repo": false,
+    "stageDir": ".stage",
+    "baseDir": "dist",
+    "files": ["**/*"],
+    "pkgFiles": null,
+    "commitMessage": "Release %s",
+    "tagName": "%s",
+    "tagAnnotation": "Release %s",
+    "beforeStageCommand": false,
+    "afterReleaseCommand": false
+  },
+  "prompt": {
+    "src": {
+      "status": false,
+      "commit": true,
+      "tag": true,
+      "push": true,
+      "release": true,
+      "publish": false
+    },
+    "dist": {
+      "status": false,
+      "commit": true,
+      "tag": true,
+      "push": true,
+      "release": true,
+      "publish": false
+    }
+  }
+}
