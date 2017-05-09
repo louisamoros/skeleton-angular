@@ -1,13 +1,22 @@
 {
-  "buildCommand": "npm build",
+  "non-interactive": false,
+  "dry-run": false,
+  "verbose": false,
+  "force": false,
+  "pkgFiles": ["package.json"],
+  "increment": "patch",
+  "prereleaseId": null,
+  "buildCommand": false,
+  "changelogCommand": "git log --pretty=format:'* %s (%h)' [REV_RANGE]",
+  "requireCleanWorkingDir": false,
   "src": {
-    "commitMessage": "[release-it] prepare release skeleton-angular-%s",
-    "tagName": "skeleton-angular-%s",
-    "tagAnnotation": "skeleton-angular-%s",
+    "commitMessage": "Release %s",
+    "tagName": "%s",
+    "tagAnnotation": "Release %s",
     "pushRepo": null,
     "beforeStartCommand": "npm test",
     "beforeStageCommand": false,
-    "afterReleaseCommand": "echo 'ALL OK'"
+    "afterReleaseCommand": "echo Successfully released ${version} to ${dist.repo}."
   },
   "dist": {
     "repo": false,
