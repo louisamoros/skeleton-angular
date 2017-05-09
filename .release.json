@@ -18,29 +18,9 @@
     "beforeStageCommand": false,
     "afterReleaseCommand": "echo Successfully released ${version} to ${dist.repo}."
   },
-  "dist": {
-    "repo": false,
-    "stageDir": ".stage",
-    "baseDir": "dist",
-    "files": ["**/*"],
-    "pkgFiles": null,
-    "commitMessage": "Release %s",
-    "tagName": "%s",
-    "tagAnnotation": "Release %s",
-    "beforeStageCommand": false,
-    "afterReleaseCommand": false
-  },
   "prompt": {
     "src": {
-      "status": false,
-      "commit": true,
-      "tag": true,
-      "push": true,
-      "release": true,
-      "publish": false
-    },
-    "dist": {
-      "status": false,
+      "status": true,
       "commit": true,
       "tag": true,
       "push": true,
